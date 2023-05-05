@@ -32,7 +32,7 @@ class MovieList extends Component {
     }
 
     handleNext=()=>{
-        this.setState({ 
+        this.setState({
             pArr:[...this.state.pArr,this.state.pArr.length+1],
             currPage:this.state.currPage+1
         },this.changeMovies)
@@ -102,7 +102,7 @@ class MovieList extends Component {
                         {this.state.pArr.map((ele)=>(
                             <li className="page-item"><a className="page-link" onClick={()=>this.handlePageClick(ele)}>{ele}</a></li>
                         ))}
-                        
+
                         <li className="page-item"><a className="page-link" onClick={this.handleNext} >Next</a></li>
                     </ul>
                 </nav>
