@@ -286,7 +286,7 @@ class Fav extends Component {
                         className="btn btn-danger"
                         onClick={() => this.manageDelete(idx)}
                       >
-                        Delete button
+                        Delete
                       </button>
                     </td>
                   </tr>
